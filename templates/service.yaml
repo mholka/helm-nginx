@@ -11,5 +11,5 @@ spec:
     name: "{{ .Values.appName }}-service"
   selector:
     app: {{ .Values.appName }}
-    tier: frontend
+    
   type: NodePort
