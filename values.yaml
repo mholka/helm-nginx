@@ -2,8 +2,9 @@ replicas: 5
 
 appName: nginx
 
-image: nginx
-tag: latest
+image:
+  name: nginx
+  tag: latest
 
 configmap:
   data:
