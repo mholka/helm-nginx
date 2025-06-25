@@ -21,4 +21,7 @@ spec:
       - image: "{{ .Values.image.name}}:{{ .Values.image.tag}}"
         name: {{ .Values.appName}}
         resources: {}
+        ports:
+        - containerPort: 80
+          name: http
 status: {}
