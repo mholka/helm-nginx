@@ -8,7 +8,7 @@ spec:
   ports:
   - port: 80
     protocol: TCP
-    name: {{ .Values.appName }}-service
+    name: "{{ .Values.appName }}-service"
   selector:
     app: {{ .Values.appName }}
     tier: frontend
