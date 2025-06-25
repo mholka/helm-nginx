@@ -8,6 +8,6 @@ image:
   tag: latest
 
 # Service configuration for Helm-nginx application
-#configmap:
-#  data:
-#    CUSTOM_HEADER: 'Hello World!'
+configmap:
+  data:
+    CUSTOM_HEADER: 'Hello World!'
