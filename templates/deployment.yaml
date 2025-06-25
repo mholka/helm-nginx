@@ -21,6 +21,11 @@ spec:
       - image: "{{ .Values.image.name}}:{{ .Values.image.tag}}"
         name: {{ .Values.appName}}
         resources: {}
+        env:
+        - name: POD_NAME
+          valueFrom:
+            fieldRef:
+              fieldPath: metadata.name
         ports:
         - containerPort: 8080
           name: http
