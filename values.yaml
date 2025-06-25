@@ -1,3 +1,4 @@
+# Deployment configuration for Helm-nginx application
 replicas: 2
 
 appName: nginx
@@ -6,6 +7,7 @@ image:
   name: nginx
   tag: latest
 
+# Service configuration for Helm-nginx application
 configmap:
   data:
     CUSTOM_HEADER: 'Hello World!'
