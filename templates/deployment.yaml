@@ -18,7 +18,7 @@ spec:
         app: {{ .Values.appName}}
     spec:
       containers:
-      - image: {{ .Values.Image}}: {{ .Values.Tag}}
+      - image: {{ .Values.Image}}:latest
         name: {{ .Values.appName}}
         resources: {}
 status: {}
