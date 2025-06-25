@@ -4,10 +4,10 @@ replicas: 2
 appName: nginx
 
 image:
-  name: nginx
+  name: mholka1/webapp
   tag: latest
 
 # Service configuration for Helm-nginx application
-configmap:
-  data:
-    CUSTOM_HEADER: 'Hello World!'
+#configmap:
+#  data:
+#    CUSTOM_HEADER: 'Hello World!'
